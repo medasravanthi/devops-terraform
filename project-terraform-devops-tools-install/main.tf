@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami                    = "ami-0277155c3f0ab2930"      #change ami id for different region
+  ami                    = "ami-0ecb0bb5d6b19457a"      #change ami id for different region
   instance_type          = "t2.large"
   key_name               = "vscode"              #change key name as per your setup
   vpc_security_group_ids = [aws_security_group.devops-project-veera.id]
